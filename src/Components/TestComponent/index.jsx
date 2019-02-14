@@ -1,16 +1,23 @@
 import React, { Component } from "react";
 
-import PopUp from "../PopUp";
+import {
+  DropDown,
+  DropDownButton,
+  DropDownMenu,
+  DropDownItem
+} from "../Dropdown";
 
 class TestComponent extends Component {
   render() {
     return (
       <div>
-        <PopUp
-          content="fweoinfdsonfoefepowjfew f ewofjwejfiowejfjweiojdf ewoifjwe oföfjewäfjwewfäpwj ewpfjwepofjwefäjdssodpfj pfjewf wpefjepfjw pefj ewpfj wepfj feosfghelrifh ofh weofhwei"
-          backgroundColor="black"
-          duration="10"
-        />
+        <DropDown>
+          <DropDownButton>Drop</DropDownButton>
+          <DropDownMenu>
+            <DropDownItem>Hallo</DropDownItem>
+            <DropDownItem>Hallo</DropDownItem>
+          </DropDownMenu>
+        </DropDown>
       </div>
     );
   }
